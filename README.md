@@ -21,7 +21,7 @@ Official privacy policies and terms for applications published by **PocketESP-ID
 
 **Effective Date:** September 18, 2026  
 **Developer:** PocketESP-IDE / OpenProxy Shield Team  
-**Contact Email:** [pocketesp.admin@gmail.com](mailto:pocketesp.admin@gmail.com)
+**Contact Email:** [maker@pocketesp.com](mailto:maker@pocketesp.com)
 
 ### 1. Zero-Log Guarantee
 OpenProxy Shield does NOT inspect, monitor, track, store, or log:

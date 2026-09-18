@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - OpenProxy Shield</title>
+    <style>
+        :root {
+            --bg-color: #0d0e15;
+            --card-bg: #161824;
+            --border-color: #242738;
+            --accent-green: #00e676;
+            --accent-purple: #6d4aff;
+            --text-main: #f0f2f8;
+            --text-muted: #9ba1b6;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 24px 16px;
+        }
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 36px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .app-badge {
+            display: inline-block;
+            background: rgba(109, 74, 255, 0.18);
+            border: 1px solid var(--accent-purple);
+            color: #d1c4e9;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+        .effective-date {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 20px 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        .guarantee-card {
+            border-color: rgba(0, 230, 118, 0.4);
+            background: linear-gradient(135deg, rgba(0, 230, 118, 0.08) 0%, rgba(22, 24, 36, 1) 100%);
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--accent-green);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        h3 {
+            font-size: 15px;
+            font-weight: 600;
+            color: #ffffff;
+            margin: 14px 0 6px 0;
+        }
+        p {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 14px;
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        a {
+            color: var(--accent-green);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-badge">OpenProxy Shield</div>
+            <h1>Privacy Policy</h1>
+            <p class="effective-date">Effective Date: September 17, 2026</p>
+        </header>
+
+        <div class="card guarantee-card">
+            <h2>🛡️ Zero-Log Guarantee</h2>
+            <p><strong>OpenProxy Shield</strong> is committed to protecting your online privacy. We do not inspect, record, log, monitor, or store your browsing traffic, destination websites, DNS lookups, or user activity. All network operations are conducted locally on your device.</p>
+        </div>
+
+        <div class="card">
+            <h2>1. VPN Service and Network Routing</h2>
+            <p>Our application uses Android's native <code>VpnService</code> API (<code>android.permission.BIND_VPN_SERVICE</code>) to create a local, encrypted network loopback tunnel (127.0.0.1) on your device. This is the core functionality required to:</p>
+            <ul>
+                <li>Route outbound HTTP and HTTPS socket traffic through user-selected global proxy nodes.</li>
+                <li>Encapsulate connection payloads and obscure your origin IP address.</li>
+                <li>Route DNS queries to public secure DNS resolvers (e.g., Google 8.8.8.8) to prevent ISP DNS poisoning.</li>
+            </ul>
+            <p><strong>We do not operate central data interception servers.</strong> We do not log which servers you connect to, what URLs you request, or what files you download.</p>
+        </div>
+
+        <div class="card">
+            <h2>2. Advertising and Third-Party SDKs (Google AdMob)</h2>
+            <p>OpenProxy Shield is supported by advertising to offer free, unlimited proxy access. We integrate the official <strong>Google Mobile Ads (AdMob) SDK</strong>.</p>
+            <p>AdMob may collect and process pseudonymous identifiers and device telemetry to serve advertisements:</p>
+            <ul>
+                <li>Google Advertising ID (GAID / AAID)</li>
+                <li>General location (IP-based city/country level)</li>
+                <li>App interaction metrics and diagnostic crash data</li>
+            </ul>
+            <p>Ad traffic is explicitly bypassed from the VPN tunnel so advertising providers never monitor your encrypted proxy sessions.</p>
+            <p>For more details on how Google processes ad data, please review the <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Privacy & Terms Policy</a>.</p>
+        </div>
+
+        <div class="card">
+            <h2>3. Local Device Data Storage</h2>
+            <p>We do not require user accounts, email registration, passwords, or personal profiles. App settings such as:</p>
+            <ul>
+                <li>Selected proxy node preferences and custom port settings</li>
+                <li>Session timer extension counters</li>
+                <li>Protocol filters</li>
+            </ul>
+            <p>are saved strictly on your local device hardware using encrypted Android <code>SharedPreferences</code> and are never transmitted to external cloud databases.</p>
+        </div>
+
+        <div class="card">
+            <h2>4. Children's Privacy</h2>
+            <p>OpenProxy Shield is intended for general audiences aged 18 and older. We do not knowingly collect personal information from children under the age of 13. If you believe personal information from a minor has been provided, please contact us immediately for prompt deletion.</p>
+        </div>
+
+        <div class="card">
+            <h2>5. Your Rights (GDPR & CCPA)</h2>
+            <p>Because OpenProxy Shield does not collect, sell, or maintain personal user dossiers or server browsing logs, there is no personal profiling data available to disclose or delete. You have complete autonomy over your advertising preferences via your Android system settings (<strong>Settings → Google → Ads → Reset advertising ID</strong> or <strong>Delete advertising ID</strong>).</p>
+        </div>
+
+        <div class="card">
+            <h2>6. Policy Updates and Contact Us</h2>
+            <p>We may update this Privacy Policy from time to time. Any changes will be reflected with a revised "Effective Date" at the top of this document.</p>
+            <p>If you have any questions, feedback, or legal inquiries regarding this Privacy Policy, please contact our support team:</p>
+            <p><strong>Email:</strong> <a href="mailto:support@openproxyshield.com">support@openproxyshield.com</a></p>
+            <p><strong>Developer:</strong> OpenProxy Shield Team</p>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 OpenProxy Shield. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

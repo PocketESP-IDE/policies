@@ -9,9 +9,10 @@
     :root {
       --bg-color: #030311;
       --card-bg: #080820;
-      --text-color: rgba(255, 255, 255, 0.8);
+      --text-color: rgba(255, 255, 255, 0.85);
       --accent-color: #00f5ff;
-      --border-color: rgba(131, 56, 236, 0.3);
+      --secondary-accent: #ff006e;
+      --border-color: rgba(131, 56, 236, 0.35);
     }
     body {
       background-color: var(--bg-color);
@@ -21,47 +22,66 @@
       padding: 40px 20px;
       display: flex;
       justify-content: center;
-      line-height: 1.6;
+      line-height: 1.65;
     }
     .container {
-      max-width: 650px;
+      max-width: 680px;
       background: var(--card-bg);
       border: 1px solid var(--border-color);
       border-radius: 16px;
       padding: 40px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
     }
     h1 {
       font-family: 'Orbitron', monospace;
       color: #fff;
-      font-size: 24px;
+      font-size: 26px;
       text-transform: uppercase;
       letter-spacing: 2px;
       margin-top: 0;
-      margin-bottom: 20px;
+      margin-bottom: 12px;
       border-bottom: 2px solid var(--border-color);
       padding-bottom: 15px;
+    }
+    .last-updated {
+      color: var(--accent-color);
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 24px;
     }
     h2 {
       font-family: 'Orbitron', monospace;
       color: var(--accent-color);
       font-size: 16px;
-      margin-top: 30px;
-      margin-bottom: 10px;
+      margin-top: 32px;
+      margin-bottom: 12px;
       letter-spacing: 1px;
     }
     p, li {
       font-size: 14px;
+      color: rgba(255, 255, 255, 0.85);
     }
     ul {
       padding-left: 20px;
       margin-bottom: 20px;
     }
+    li {
+      margin-bottom: 6px;
+    }
+    .highlight-box {
+      background: rgba(0, 245, 255, 0.06);
+      border-left: 4px solid var(--accent-color);
+      padding: 14px 18px;
+      border-radius: 4px;
+      margin: 18px 0;
+      font-size: 13px;
+    }
     .contact-info {
       background: rgba(255, 255, 255, 0.05);
-      border-radius: 8px;
-      padding: 15px;
-      margin-top: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 18px;
+      margin-top: 32px;
       font-size: 13px;
     }
     a {
@@ -74,46 +94,74 @@
     .footer {
       text-align: center;
       margin-top: 40px;
-      font-size: 11px;
-      color: rgba(255, 255, 255, 0.3);
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.4);
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Privacy Policy</h1>
-    <p>Last Updated: July 6, 2026</p>
-    <p>This privacy policy governs your use of the software application <strong>Echo Runner</strong> ("Application") for mobile devices, created by the Echo Runner Team.</p>
+    <div class="last-updated">Last Updated: September 21, 2026</div>
 
-    <h2>1. What information does the Application obtain and how is it used?</h2>
-    <p><strong>User Provided Information:</strong> The Application does not require any user registration. We do not collect, store, or share any personal information that you provide.</p>
-    <p><strong>Automatically Collected Information:</strong> The Application does not collect information about your mobile device identity, location, or usage patterns automatically, except for anonymous statistics collected by third-party services detailed below.</p>
+    <p>This privacy policy governs your use of the mobile application <strong>Echo Runner</strong> ("Application", "we", "us", or "our"), available on the Google Play Store, developed and published by <strong>PocketESP</strong>.</p>
+
+    <div class="highlight-box">
+      <strong>Summary:</strong> Echo Runner is designed with privacy by design. We do not require personal accounts, emails, phone numbers, or real-world identities. All gameplay progress is saved on your device, and optional global leaderboard entries only use your chosen in-game callsign.
+    </div>
+
+    <h2>1. Information We Collect and Process</h2>
+
+    <p><strong>A. In-Game Callsign / Nickname (User-Provided):</strong></p>
+    <p>When you start the game, you may choose an in-game runner callsign (e.g. "NEON ACE"). This nickname is used solely for in-game display and on the public global leaderboard. You should not use your real name, email, or any personally identifiable information as your callsign.</p>
+
+    <p><strong>B. Global Leaderboard Data & Device Identifier:</strong></p>
+    <p>To enable worldwide rankings, the Application transmits and stores your best wave reached, score, callsign, and an anonymous, randomly generated internal installation identifier (e.g. <code>dev_...</code>) on our secure cloud database hosted by Supabase. This identifier is used exclusively to update and deduplicate your personal record on the leaderboard and is never linked to your personal identity.</p>
+
+    <p><strong>C. Local Device Storage:</strong></p>
+    <p>Game settings (sound preferences, unlocked cosmetic skins, coin balances, and achievements) are saved locally on your device via standard sandbox application storage (SharedPreferences).</p>
 
     <h2>2. Third-Party Services & Advertising</h2>
-    <p>To support the development of Echo Runner, we use Google AdMob to display advertisements in the Application. Google AdMob may collect and use anonymous data, such as:</p>
+
+    <p>The Application integrates third-party services that may collect information used to identify your device in accordance with Google Play Developer Policies:</p>
+
+    <p><strong>Google AdMob (Advertising):</strong></p>
+    <p>We display rewarded and interstitial advertisements provided by Google AdMob to support the development and maintenance of Echo Runner. Google AdMob may collect and process:</p>
     <ul>
-      <li>Your device's advertising identifier (IDFA/GAID)</li>
-      <li>Approximate location data (IP address)</li>
-      <li>Ad interaction logs and performance parameters</li>
+      <li>Google Advertising ID (GAID / AAID)</li>
+      <li>IP address (for coarse geographic location and fraud prevention)</li>
+      <li>App interaction, ad diagnostic data, and performance metrics</li>
     </ul>
-    <p>For more information, please read the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy & Terms</a>.</p>
+    <p>For details on how Google processes ad data, please review the <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Advertising Privacy Policy</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy & Terms</a>.</p>
 
-    <h2>3. Local Storage</h2>
-    <p>All game save files, including your coin balances, high scores, and purchased skins, are saved locally on your device via sandbox web storage. No local save progress is uploaded to external servers.</p>
+    <p><strong>Supabase (Cloud Leaderboard Database):</strong></p>
+    <p>We use Supabase (PostgreSQL) to store public leaderboard entries (callsign, waves, score, anonymous ID). Data is transmitted securely over encrypted TLS/HTTPS connections. Review the <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase Privacy Policy</a> for more information.</p>
 
-    <h2>4. Children's Privacy</h2>
-    <p>We do not use the Application to knowingly solicit data from or market to children under the age of 13. If a parent or guardian becomes aware that his or her child has provided us with information without their consent, he or she should contact us.</p>
+    <h2>3. Data Security & Encryption</h2>
+    <p>All network communications between the Application and third-party backend services (Supabase and Google AdMob) are strictly transmitted over industry-standard HTTPS/TLS encryption to protect data in transit.</p>
 
-    <h2>5. Changes to This Privacy Policy</h2>
-    <p>This Privacy Policy may be updated from time to time for any reason. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+    <h2>4. Data Retention and Deletion Policy</h2>
+    <p>In accordance with Google Play's User Data and Account Deletion policies:</p>
+    <ul>
+      <li><strong>Local Data:</strong> You can completely delete all local data, coins, and settings at any time by clearing the Application's storage in your Android device settings or uninstalling the app.</li>
+      <li><strong>Leaderboard Data Deletion:</strong> If you wish to have your callsign and leaderboard score removed from our global leaderboard database, you may send a deletion request to <a href="mailto:maker@pocketesp.com">maker@pocketesp.com</a> specifying your callsign. We will process and delete your record within 7 business days.</li>
+    </ul>
+
+    <h2>5. Children's Privacy (COPPA & Families Policy)</h2>
+    <p>Echo Runner is suitable for general audiences. The Application does not knowingly solicit or collect personal data from children under the age of 13. All data collection is limited to non-personal anonymous identifiers for game functionality and ads. If a parent or guardian discovers that a child has submitted personal information, please contact us immediately so we can remove it.</p>
+
+    <h2>6. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy periodically to reflect app updates or regulatory changes. The updated version will be indicated by the "Last Updated" date at the top of this page.</p>
 
     <div class="contact-info">
-      <strong>Contact Us:</strong><br>
-      If you have any questions regarding privacy while using the Application, please contact us via email at <a href="mailto:maker@pocketesp.com">maker@pocketesp.com</a>.
+      <strong>Developer Contact:</strong><br>
+      PocketESP Development Team<br>
+      Email: <a href="mailto:maker@pocketesp.com">maker@pocketesp.com</a><br>
+      Website: <a href="https://pocketesp.com" target="_blank" rel="noopener">pocketesp.com</a>
     </div>
-    
+
     <div class="footer">
-      &copy; 2026 Echo Runner. All Rights Reserved.
+      &copy; 2026 Echo Runner by PocketESP. All Rights Reserved.
     </div>
   </div>
 </body>

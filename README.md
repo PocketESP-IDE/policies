@@ -15,9 +15,15 @@ Official privacy policies and terms for applications published by **PocketESP-ID
 - **Live Hosted Page:** [https://pocketesp-ide.github.io/policies/echo-runner.html](https://pocketesp-ide.github.io/policies/echo-runner.html)
 - **Direct HTML:** [echo-runner.html](echo-runner.html)
 
+### 3. 🌌 Lumina Wallpapers: 4K & Live
+- **Live Hosted Page:** [https://pocketesp-ide.github.io/policies/lumina-wallpapers.html](https://pocketesp-ide.github.io/policies/lumina-wallpapers.html)
+- **Direct HTML:** [lumina-wallpapers.html](lumina-wallpapers.html)
+- **Folder Hosted Page:** [https://pocketesp-ide.github.io/policies/lumina-wallpapers/](https://pocketesp-ide.github.io/policies/lumina-wallpapers/)
+- **Summary:** Zero-account 4K wallpaper customizer, scoped storage media saving, accelerometer shake-to-change (in-memory only), AdMob ad disclosures, foreground service disclosures, and full COPPA/GDPR compliance.
+
 ---
 
-## 🔒 OpenProxy Shield Privacy Policy (Full Text)
+## 🛡️ OpenProxy Shield Privacy Policy (Full Text)
 
 **Effective Date:** September 18, 2026  
 **Developer:** PocketESP-IDE / OpenProxy Shield Team  

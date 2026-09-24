@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Lumina Wallpapers: 4K & Live</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #030311;
+      --card-bg: #080820;
+      --text-color: rgba(255, 255, 255, 0.88);
+      --accent-color: #a855f7;
+      --secondary-accent: #ec4899;
+      --cyan-accent: #06b6d4;
+      --border-color: rgba(168, 85, 247, 0.35);
+    }
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      line-height: 1.65;
+    }
+    .container {
+      max-width: 720px;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.7);
+    }
+    h1 {
+      font-family: 'Orbitron', monospace;
+      color: #fff;
+      font-size: 26px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 0;
+      margin-bottom: 12px;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 15px;
+      background: linear-gradient(135deg, #fff 0%, #c084fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .last-updated {
+      color: var(--cyan-accent);
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 24px;
+      letter-spacing: 0.5px;
+    }
+    h2 {
+      font-family: 'Orbitron', monospace;
+      color: #c084fc;
+      font-size: 16px;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+    p, li {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.85);
+    }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .highlight-box {
+      background: rgba(168, 85, 247, 0.08);
+      border-left: 4px solid var(--accent-color);
+      padding: 16px 20px;
+      border-radius: 6px;
+      margin: 20px 0;
+      font-size: 13.5px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 3px 8px;
+      background: rgba(6, 182, 212, 0.2);
+      border: 1px solid var(--cyan-accent);
+      border-radius: 4px;
+      color: #67e8f9;
+      font-size: 11px;
+      font-weight: 600;
+      margin-right: 6px;
+    }
+    .contact-info {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 32px;
+      font-size: 13px;
+    }
+    a {
+      color: var(--cyan-accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <div class="last-updated">Last Updated: September 24, 2026</div>
+
+    <p>This privacy policy governs your use of the mobile application <strong>Lumina Wallpapers: 4K & Live</strong> ("Application", "we", "us", or "our"), available on the Google Play Store, developed and published by <strong>PocketESP</strong>.</p>
+
+    <div class="highlight-box">
+      <strong>Zero-Personal-Data Commitment:</strong> Lumina Wallpapers is built with privacy by design. We do not require account registration, passwords, email addresses, phone numbers, or user profiles. Your wallpaper preferences and favorite collections stay private on your device.
+    </div>
+
+    <h2>1. Information We Process & Device Capabilities</h2>
+
+    <p><strong>A. Device Accelerometer & Sensor Data (Shake-to-Change):</strong></p>
+    <p>When the optional "Shake to Change Wallpaper" feature is enabled, the Application accesses your device's hardware accelerometer sensor to detect intentional physical shake gestures. <strong>Sensor calculations are processed in-memory in real-time</strong> on your local hardware. Sensor telemetry is never stored, recorded, or transmitted to any server.</p>
+
+    <p><strong>B. Scoped Media Storage (Saving Wallpapers):</strong></p>
+    <p>When you choose to save a wallpaper, Lumina Wallpapers uses Android's modern, standard <code>MediaStore</code> API to write image files directly to your device's public <code>Pictures/LuminaWallpapers</code> directory. The Application does not inspect, read, or upload any personal photos, videos, or documents from your device.</p>
+
+    <p><strong>C. Local Preferences & Cached Assets:</strong></p>
+    <p>User preferences (dark/light theme, shake sensitivity thresholds, favorite wallpapers, and auto-changer frequency) are stored securely on the local device sandbox storage via Android <code>SharedPreferences</code>.</p>
+
+    <p><strong>D. Foreground Service (Interactive Heart Lock Screen):</strong></p>
+    <p>The Application includes an optional, user-initiated interactive Magic Heart Lock Screen overlay. When activated, a foreground service (<code>specialUse</code>) keeps the touch-responsive visual particle engine active while the screen is locked, accompanied by an ongoing notification that allows immediate termination at any time.</p>
+
+    <h2>2. Third-Party Services & Advertising</h2>
+
+    <p>To support ongoing development and server maintenance, the Application integrates Google AdMob to deliver banner ads and user-initiated rewarded video ads (such as refilling interactive fireworks cracker particles):</p>
+
+    <p><strong>Google AdMob:</strong></p>
+    <ul>
+      <li><span class="badge">Identifiers</span> <strong>Google Advertising ID (GAID / AAID):</strong> Used by Google AdMob to serve non-personalized or personalized ads in accordance with user device settings and Google Play Policy.</li>
+      <li><span class="badge">Diagnostics</span> <strong>Crash Logs & Performance Metrics:</strong> Technical telemetry collected by the Google Mobile Ads SDK for ad delivery diagnostics and fraud prevention.</li>
+      <li><span class="badge">Network</span> <strong>Coarse IP Address:</strong> Used strictly by ad networks for regional ad targeting and click fraud detection.</li>
+    </ul>
+
+    <p>For detailed information on how Google processes ad data, please review the <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Advertising Privacy Policy</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy & Terms</a>.</p>
+
+    <h2>3. Data Security & Encryption</h2>
+    <p>All network communications between the Application and third-party services (such as wallpaper CDN delivery and Google AdMob ad networks) are strictly transmitted over industry-standard <strong>HTTPS / TLS 1.3</strong> encryption to safeguard data in transit.</p>
+
+    <h2>4. Data Retention & Deletion Rights</h2>
+    <p>In accordance with Google Play's User Data and Account Deletion policies:</p>
+    <ul>
+      <li><strong>No Account Deletion Required:</strong> Because Lumina Wallpapers operates without user accounts or cloud user profiles, no personal account deletion request is necessary.</li>
+      <li><strong>Instant Local Deletion:</strong> You can purge all cached wallpapers, favorites, and settings instantly at any time by selecting "Clear Storage" in your Android system app settings or by uninstalling the Application.</li>
+      <li><strong>Ad ID Reset:</strong> You can reset or delete your Android Advertising ID at any time via <code>Settings &gt; Google &gt; Ads &gt; Reset/Delete advertising ID</code>.</li>
+    </ul>
+
+    <h2>5. Children's Privacy (COPPA & Families Policy)</h2>
+    <p>Lumina Wallpapers is designed for general audiences and does not knowingly collect, solicit, or maintain personal information from children under the age of 13. All features are compliant with COPPA and Google Play Developer Program policies.</p>
+
+    <h2>6. Changes to This Policy</h2>
+    <p>We may periodically update this Privacy Policy to reflect application updates or regulatory modifications. Updates will be reflected by the "Last Updated" timestamp at the top of this document.</p>
+
+    <div class="contact-info">
+      <strong>Developer Contact Information:</strong><br>
+      PocketESP Development Team<br>
+      Email: <a href="mailto:maker@pocketesp.com">maker@pocketesp.com</a><br>
+      Website: <a href="https://pocketesp.com" target="_blank" rel="noopener">pocketesp.com</a><br>
+      GitHub: <a href="https://github.com/PocketESP-IDE" target="_blank" rel="noopener">github.com/PocketESP-IDE</a>
+    </div>
+
+    <div class="footer">
+      &copy; 2026 Lumina Wallpapers by PocketESP. All Rights Reserved.
+    </div>
+  </div>
+</body>
+</html>

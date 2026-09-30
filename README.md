@@ -1,4 +1,4 @@
-﻿# 📜 PocketESP Legal & Privacy Policies
+# 📜 PocketESP Legal & Privacy Policies
 
 Official privacy policies and terms for applications published by **PocketESP-IDE**.
 
@@ -20,6 +20,12 @@ Official privacy policies and terms for applications published by **PocketESP-ID
 - **Direct HTML:** [lumina-wallpapers.html](lumina-wallpapers.html)
 - **Folder Hosted Page:** [https://pocketesp-ide.github.io/policies/lumina-wallpapers/](https://pocketesp-ide.github.io/policies/lumina-wallpapers/)
 - **Summary:** Zero-account 4K wallpaper customizer, scoped storage media saving, accelerometer shake-to-change (in-memory only), AdMob ad disclosures, foreground service disclosures, and full COPPA/GDPR compliance.
+
+### 4. 📄 PDF Zenith (Offline PDF Suite & Reader)
+- **Live Hosted Page:** [https://pocketesp-ide.github.io/policies/pdfzenith.html](https://pocketesp-ide.github.io/policies/pdfzenith.html)
+- **Direct HTML:** [pdfzenith.html](pdfzenith.html)
+- **Folder Hosted Page:** [https://pocketesp-ide.github.io/policies/pdfzenith/](https://pocketesp-ide.github.io/policies/pdfzenith/)
+- **Summary:** Offline-first document processing, zero user data tracking or collection, on-device ML Kit OCR & encryption, local camera scanning, Google AdMob disclosures, and complete Google Play Data Safety compliance.
 
 ---
 

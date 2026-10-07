@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Screenshot Brain</title>
+    <style>
+        :root {
+            --bg-color: #0c0f17;
+            --surface-color: #161b26;
+            --surface-border: #222b3d;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --accent-blue: #38bdf8;
+            --accent-teal: #2dd4bf;
+            --accent-purple: #a855f7;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--surface-border);
+        }
+
+        .logo-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.1), rgba(45, 212, 191, 0.1));
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            padding: 8px 18px;
+            border-radius: 9999px;
+            margin-bottom: 16px;
+        }
+
+        .logo-badge span {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--accent-blue);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: 34px;
+            font-weight: 800;
+            margin: 10px 0;
+            background: linear-gradient(135deg, #ffffff 30%, var(--accent-blue) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .effective-date {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .highlight-card {
+            background-color: var(--surface-color);
+            border: 1px solid var(--surface-border);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 32px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .highlight-card .icon {
+            font-size: 32px;
+            line-height: 1;
+        }
+
+        .highlight-card h3 {
+            margin: 0 0 8px 0;
+            color: var(--accent-teal);
+            font-size: 18px;
+        }
+
+        .highlight-card p {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--accent-blue);
+            margin-top: 36px;
+            margin-bottom: 12px;
+            border-left: 3px solid var(--accent-blue);
+            padding-left: 12px;
+        }
+
+        p, li {
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: var(--text-primary);
+        }
+
+        .footer {
+            margin-top: 60px;
+            padding-top: 24px;
+            border-top: 1px solid var(--surface-border);
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-badge">
+                <span>100% On-Device &middot; Zero Cloud</span>
+            </div>
+            <h1>Privacy Policy</h1>
+            <div class="effective-date">Last Updated: October 7, 2026 &middot; Application: Screenshot Brain</div>
+        </header>
+
+        <div class="highlight-card">
+            <div class="icon">🔒</div>
+            <div>
+                <h3>Our Core Privacy Commitment</h3>
+                <p><strong>Screenshot Brain is an offline-first, on-device application.</strong> Your screenshots, extracted text, tags, categorized data, and personal information never leave your phone. We do not operate remote databases that store your gallery images or OCR scan contents.</p>
+            </div>
+        </div>
+
+        <h2>1. Information We Collect and Process</h2>
+        <p>Screenshot Brain accesses and processes the following data exclusively on your device:</p>
+        <ul>
+            <li><strong>Images & Screenshots:</strong> When you grant storage permissions (<code>READ_MEDIA_IMAGES</code> or legacy <code>READ_EXTERNAL_STORAGE</code>), the app scans your device's screenshot directory to categorize and organize them.</li>
+            <li><strong>Extracted Text (On-Device OCR):</strong> Text inside your screenshots is parsed directly on your phone's processor using Google ML Kit's on-device models. No image pixels or OCR transcripts are transmitted over the internet to external servers.</li>
+            <li><strong>Encrypted Vault:</strong> Screenshots placed in the private vault are encrypted locally with hardware-backed biometric security.</li>
+        </ul>
+
+        <h2>2. Permissions Requested & Why</h2>
+        <ul>
+            <li><strong>Storage / Photos Access:</strong> Required to discover and display screenshot photos from your gallery.</li>
+            <li><strong>Notifications (POST_NOTIFICATIONS):</strong> Used to notify you of calendar deadlines, extracted bill due dates, or OTP expiries found in your screenshots.</li>
+            <li><strong>Exact Alarms (SCHEDULE_EXACT_ALARM):</strong> Required to schedule precise reminders for upcoming bills or events detected in screenshots.</li>
+            <li><strong>Biometric / Fingerprint:</strong> Required solely to authenticate you before unlocking the local Private Vault.</li>
+            <li><strong>Network & Internet:</strong> Used exclusively for Google Play In-App Billing (Pro subscriptions/purchases) and serving ads via Google AdMob (for free-tier users).</li>
+        </ul>
+
+        <h2>3. Third-Party Services</h2>
+        <p>The app integrates standard Google Play developer libraries that may process limited technical metadata:</p>
+        <ul>
+            <li><strong>Google Play Billing:</strong> Handles in-app purchases securely through your Google Play account. We do not store or see your credit card or financial credentials.</li>
+            <li><strong>Google AdMob:</strong> Serves standard advertisements on the free tier. AdMob may collect device identifiers and technical network diagnostics per Google's advertising policies.</li>
+        </ul>
+
+        <h2>4. Data Retention and Deletion</h2>
+        <p>Because all indexed screenshot data is stored in a local SQLite/Room database on your device, you have complete and permanent control over your data:</p>
+        <ul>
+            <li>You can clear all indexed OCR data anytime inside <strong>Settings &rarr; Clear All Indexed Data</strong>.</li>
+            <li>Uninstalling the app immediately deletes all local databases, cached indices, and app-specific preferences permanently from your device.</li>
+        </ul>
+
+        <h2>5. Children's Privacy</h2>
+        <p>Screenshot Brain does not knowingly collect or solicit any personal information from children under the age of 13.</p>
+
+        <h2>6. Contact Us</h2>
+        <p>If you have any questions or feedback regarding this Privacy Policy, you can reach out to us at:</p>
+        <p><strong>Developer:</strong> Amit<br>
+        <strong>Email:</strong> <a href="mailto:support@screenshotbrain.app">support@screenshotbrain.app</a></p>
+
+        <div class="footer">
+            &copy; 2026 Screenshot Brain. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>

@@ -27,6 +27,13 @@ Official privacy policies and terms for applications published by **PocketESP-ID
 - **Folder Hosted Page:** [https://pocketesp-ide.github.io/policies/pdfzenith/](https://pocketesp-ide.github.io/policies/pdfzenith/)
 - **Summary:** Offline-first document processing, zero user data tracking or collection, on-device ML Kit OCR & encryption, local camera scanning, Google AdMob disclosures, and complete Google Play Data Safety compliance.
 
+### 5. 🧠 Screenshot Brain (On-Device Neural Memory & Vault)
+- **Live Hosted Page:** [https://pocketesp-ide.github.io/policies/screenshot-brain.html](https://pocketesp-ide.github.io/policies/screenshot-brain.html)
+- **Direct HTML:** [screenshot-brain.html](screenshot-brain.html)
+- **Folder Hosted Page:** [https://pocketesp-ide.github.io/policies/screenshot-brain/](https://pocketesp-ide.github.io/policies/screenshot-brain/)
+- **Summary:** 100% on-device neural screenshot indexing, on-device ML Kit OCR, biometric vault, zero remote tracking, Google Play In-App Billing and AdMob disclosures.
+
+
 ---
 
 ## 🛡️ OpenProxy Shield Privacy Policy (Full Text)

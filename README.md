@@ -33,6 +33,12 @@ Official privacy policies and terms for applications published by **PocketESP-ID
 - **Folder Hosted Page:** [https://pocketesp-ide.github.io/policies/screenshot-brain/](https://pocketesp-ide.github.io/policies/screenshot-brain/)
 - **Summary:** 100% on-device neural screenshot indexing, on-device ML Kit OCR, biometric vault, zero remote tracking, Google Play In-App Billing and AdMob disclosures.
 
+### 6. 🎛️ AutoProfile (Smart Audio & Automation Profile Manager)
+- **Live Hosted Page:** [https://pocketesp-ide.github.io/policies/autoprofile.html](https://pocketesp-ide.github.io/policies/autoprofile.html)
+- **Direct HTML:** [autoprofile.html](autoprofile.html)
+- **Folder Hosted Page:** [https://pocketesp-ide.github.io/policies/autoprofile/](https://pocketesp-ide.github.io/policies/autoprofile/)
+- **Summary:** Offline-first smart automation and audio profile switcher, on-device geofencing, zero personal data tracking or collection, Google AdMob disclosures, and complete Google Play Data Safety compliance.
+
 
 ---
 

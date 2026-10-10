@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - AutoProfile</title>
+  <style>
+    :root {
+      --bg: #0A1620;
+      --card-bg: #0F2232;
+      --border: #1E3A52;
+      --primary: #0284C7;
+      --accent: #FB923C;
+      --text: #F1F5F9;
+      --text-muted: #94A3B8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 24px 16px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 24px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-size: 1.85rem;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(2, 132, 199, 0.15);
+      color: #38BDF8;
+      border: 1px solid rgba(2, 132, 199, 0.4);
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    h2 {
+      font-size: 1.25rem;
+      color: #38BDF8;
+      margin-top: 28px;
+      margin-bottom: 12px;
+      border-left: 3px solid var(--accent);
+      padding-left: 10px;
+    }
+    h3 {
+      font-size: 1.05rem;
+      color: #FFFFFF;
+      margin-top: 18px;
+      margin-bottom: 6px;
+    }
+    p, ul {
+      color: #CBD5E1;
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    code {
+      background: rgba(255,255,255,0.08);
+      color: var(--accent);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.88rem;
+      font-family: monospace;
+    }
+    .highlight-card {
+      background: rgba(2, 132, 199, 0.08);
+      border: 1px solid rgba(2, 132, 199, 0.25);
+      border-radius: 10px;
+      padding: 16px;
+      margin: 16px 0;
+    }
+    a {
+      color: #38BDF8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 36px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">100% On-Device Automation &bull; Zero Cloud Tracking</div>
+      <h1>Privacy Policy for AutoProfile</h1>
+      <p class="meta"><strong>Effective Date:</strong> October 10, 2026 &nbsp;|&nbsp; <strong>Last Updated:</strong> October 10, 2026</p>
+    </header>
+
+    <h2>1. Overview & Commitment to Privacy</h2>
+    <p>Welcome to <strong>AutoProfile</strong> ("we", "our", or "the App"), developed by <strong>Amit</strong>. AutoProfile is designed from the ground up with a strict <strong>privacy-first, on-device automation</strong> architecture.</p>
+    
+    <div class="highlight-card">
+      <p><strong>Our Core Privacy Principles:</strong></p>
+      <ul>
+        <li><strong>No Cloud Tracking:</strong> We operate no external databases tracking your identity, profile triggers, or daily habits.</li>
+        <li><strong>No Account Required:</strong> No login, phone number, email registration, or social sign-in is required to use AutoProfile.</li>
+        <li><strong>Zero Data Selling:</strong> We never sell, rent, monetize, or transmit your personal data, location, or schedule to advertising brokers or analytics firms.</li>
+      </ul>
+    </div>
+
+    <p>This Privacy Policy explains what permissions AutoProfile requests, why each permission is technically necessary for automated sound profiling, and how user privacy is safeguarded in full compliance with the <strong>Google Play Developer Program Policies</strong> (including the Sensitive Data &amp; Background Location policies).</p>
+
+    <h2>2. Sensitive Permissions & Data Processing</h2>
+    <p>All rule evaluations and profile triggers occur <strong>100% locally on your device</strong> using a private, sandboxed Android Room database.</p>
+
+    <h3>A. Location Data (Foreground &amp; Background)</h3>
+    <ul>
+      <li><strong>Permissions Requested:</strong> <code>ACCESS_FINE_LOCATION</code>, <code>ACCESS_COARSE_LOCATION</code>, <code>ACCESS_BACKGROUND_LOCATION</code>.</li>
+      <li><strong>Purpose:</strong> To allow you to designate geographic geofence zones (such as "Work", "College", "Home", or "Place of Worship") that automatically toggle your phone's ringer (Silent, Vibrate, Normal) upon arrival or departure.</li>
+      <li><strong>Background Requirement:</strong> Background location is necessary so your sound profiles trigger reliably even when your phone is locked in your pocket or when other apps are active.</li>
+      <li><strong>Zero Tracking Guarantee:</strong> AutoProfile <strong>never</strong> records your movement history or uploads your location coordinates to any remote server.</li>
+    </ul>
+
+    <h3>B. Do Not Disturb (DND) / Notification Policy Access</h3>
+    <ul>
+      <li><strong>Permission Requested:</strong> <code>ACCESS_NOTIFICATION_POLICY</code>.</li>
+      <li><strong>Purpose:</strong> To allow the app to silence ringer audio streams, engage Priority Only mode, or trigger Total Silence according to your active rules.</li>
+      <li><strong>Protection:</strong> AutoProfile does not read, access, or log the text or sender of incoming notifications.</li>
+    </ul>
+
+    <h3>C. Wi-Fi &amp; Nearby Network State</h3>
+    <ul>
+      <li><strong>Permissions Requested:</strong> <code>ACCESS_WIFI_STATE</code>, <code>ACCESS_NETWORK_STATE</code>, <code>NEARBY_WIFI_DEVICES</code>.</li>
+      <li><strong>Purpose:</strong> To trigger profiles when connecting to or disconnecting from specific Wi-Fi SSIDs (e.g. switching to Silent when connected to your office Wi-Fi).</li>
+    </ul>
+
+    <h3>D. Bluetooth Connections</h3>
+    <ul>
+      <li><strong>Permissions Requested:</strong> <code>BLUETOOTH</code>, <code>BLUETOOTH_CONNECT</code>.</li>
+      <li><strong>Purpose:</strong> To trigger driving or media profiles when your device connects to designated Bluetooth accessories (e.g., your car audio system or wireless headphones).</li>
+    </ul>
+
+    <h3>E. Calendar Events</h3>
+    <ul>
+      <li><strong>Permission Requested:</strong> <code>READ_CALENDAR</code>.</li>
+      <li><strong>Purpose:</strong> To optionally silence your device during scheduled meetings matching keywords like "Meeting", "Lecture", or "Doctor".</li>
+      <li><strong>Protection:</strong> Only event start and end timestamps are queried locally. No attendee lists, notes, or event details are ever collected or transmitted.</li>
+    </ul>
+
+    <h3>F. Background Scheduling &amp; Boot Restoration</h3>
+    <ul>
+      <li><strong>Permissions Requested:</strong> <code>RECEIVE_BOOT_COMPLETED</code>, <code>WAKE_LOCK</code>.</li>
+      <li><strong>Purpose:</strong> Re-registers your scheduled profile timers after phone reboots and executes time-based profile transitions reliably without intrusive exact alarm requirements.</li>
+    </ul>
+
+    <h2>3. Data Storage &amp; User Control</h2>
+    <ul>
+      <li><strong>Private Sandboxed Storage:</strong> All profile configs, zone boundaries, and history logs are stored strictly inside the app's sandboxed local database (<code>autoprofile.db</code>).</li>
+      <li><strong>Complete User Deletion:</strong> You can purge all logs, zones, and custom rules at any time via <strong>Settings &rarr; Data &amp; Backup &rarr; Clear All Local History &amp; State</strong>. Uninstalling the app permanently purges all local records from your phone.</li>
+      <li><strong>Offline Local Backup:</strong> You can export and import your rules via offline JSON files on your device storage without any cloud dependency.</li>
+    </ul>
+
+    <h2>4. Third-Party Services &amp; SDKs</h2>
+    <p>AutoProfile integrates the following privacy-compliant developer libraries and services:</p>
+    <ul>
+      <li><strong>Google Play Services (Location &amp; Billing):</strong> Used for hardware-assisted geofencing and optional Google Play in-app purchases. Operates under the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
+      <li><strong>Google AdMob:</strong> Used to display advertisements to users on the free tier. Google AdMob may process device advertising identifiers (Google Advertising ID) and diagnostic telemetry to serve ads in compliance with the <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Ads Privacy Policy</a>. Pro users receive an ad-free experience.</li>
+      <li><strong>OpenStreetMap (Tile &amp; Nominatim Geocoding):</strong> Used for interactive map rendering and reverse-geocoding place names directly from your device over encrypted HTTPS under the <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">OpenStreetMap Privacy Policy</a>.</li>
+    </ul>
+
+    <h2>5. Children's Privacy</h2>
+    <p>AutoProfile is a general utility app and does not knowingly collect or solicit any personal identifiable information from children under the age of 13.</p>
+
+    <h2>6. Contact Us</h2>
+    <p>If you have any questions or feedback regarding this Privacy Policy, please contact:</p>
+    <ul>
+      <li><strong>Developer:</strong> Amit (PocketESP-IDE)</li>
+      <li><strong>Application:</strong> AutoProfile</li>
+      <li><strong>Contact Email:</strong> <a href="mailto:maker@pocketesp.com" style="color: #38BDF8;">maker@pocketesp.com</a></li>
+    </ul>
+
+    <footer>
+      &copy; 2026 AutoProfile by Amit (PocketESP-IDE). All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
